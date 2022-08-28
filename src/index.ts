@@ -30,7 +30,7 @@ function getTimeValues(timeInSeconds: number): TimeValuesReturnValue {
     }
 }
 
-export function getTimeDifference(date: string | Date): string {
+function getTimeDifference(date: string | Date): string {
 
     if (typeof date === 'string') date = new Date(date)
 
@@ -57,3 +57,5 @@ export function getTimeDifference(date: string | Date): string {
         return 'just now'
     }
 }
+
+module.exports = { getTimeDifference, getTimeValues };
