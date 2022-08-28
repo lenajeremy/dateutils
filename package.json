@@ -8,7 +8,8 @@
   "license": "GPL-3.0",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "build": "tsc"
+    "build": "tsc",
+    "prepare": "npm run build"
   },
   "private": false,
   "keywords": [
