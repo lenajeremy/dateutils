@@ -1,5 +1,5 @@
 
-type TimeValuesReturnValue = {
+export type TimeValuesReturnValue = {
     seconds: number
     minutes: number
     hours: number
@@ -9,7 +9,7 @@ type TimeValuesReturnValue = {
     years: number
 }
 
-function getTimeValues(timeInSeconds: number): TimeValuesReturnValue {
+export function getTimeValues(timeInSeconds: number): TimeValuesReturnValue {
 
     const seconds = Math.floor(timeInSeconds % 60);
     const minutes = Math.floor(timeInSeconds / 60);
@@ -30,7 +30,7 @@ function getTimeValues(timeInSeconds: number): TimeValuesReturnValue {
     }
 }
 
-function getTimeDifference(date: string | Date): string {
+export function getTimeDifference(date: string | Date): string {
 
     if (typeof date === 'string') date = new Date(date)
 
@@ -57,5 +57,3 @@ function getTimeDifference(date: string | Date): string {
         return 'just now'
     }
 }
-
-module.exports = { getTimeDifference, getTimeValues };
