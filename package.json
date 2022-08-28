@@ -1,0 +1,10 @@
+{
+  "name": "dateutils",
+  "version": "0.0.1",
+  "description": "A package to contain all manipulations I do with date and time",
+  "main": "index.ts",
+  "repository": "https://github.com/Jeremiahjacinth13/dateutils",
+  "author": "Jeremiah Lena",
+  "license": "GPL-3.0",
+  "private": false
+}
