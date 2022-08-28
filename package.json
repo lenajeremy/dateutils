@@ -1,6 +1,6 @@
 {
   "name": "date-funcs",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "A package to contain all manipulations I do with date and time",
   "main": "lib/index.js",
   "types": "lib/index.d.ts",
